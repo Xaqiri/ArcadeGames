@@ -1,0 +1,10 @@
+To be a web app made using Electron and Phaser, containing implementations 
+of a handful of arcade games. 
+
+Included Games: 
+    Tic-tac-toe 
+    Flappy Bird 
+    Frogger 
+    Breakout 
+    Tetris 
+    Pacman 

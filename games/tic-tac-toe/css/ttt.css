@@ -1,0 +1,35 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding: auto;
+  background-color: #004;
+  color: #DDD; }
+
+#navBar {
+  background-color: #ddddff;
+  color: #111111;
+  display: inline-block;
+  width: 100%; }
+  #navBar #navBarTitle {
+    float: left; }
+  #navBar #navBarItems {
+    float: right;
+    margin-right: 1%; }
+    #navBar #navBarItems #navBarItem {
+      display: inline;
+      padding-left: 1em; }
+
+#ttt {
+  text-align: center;
+  margin: 10%; }
+  #ttt .cell {
+    width: 25%;
+    height: 10%;
+    display: inline-block;
+    margin: 1%;
+    border: 2px solid #0F0; }
+    #ttt .cell:hover {
+      border: 2px solid #F00; }
+
+/*# sourceMappingURL=ttt.css.map */

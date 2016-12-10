@@ -1,0 +1,48 @@
+$bg-color: #004;
+$fg-color: #DDD;
+$lgt-bg-color: lighten($bg-color, 80%);
+$drk-fg-color: darken($fg-color, 80%);
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding: auto;
+  background-color: $bg-color;
+  color: $fg-color;
+}
+
+#navBar {
+  background-color: $lgt-bg-color;
+  color: $drk-fg-color;
+  display: inline-block;
+  width: 100%;
+  #navBarTitle {
+    float: left;
+  }
+  #navBarItems {
+    float: right;
+    margin-right: 1%;
+    #navBarItem {
+      display: inline;
+      padding-left: 1em;
+    }
+  }
+}
+
+#ttt {
+  //background-color: $lgt-bg-color;
+  //color: $drk-fg-color;
+  text-align: center;
+  margin: 10%;
+  .cell {
+    width: 25%;
+    height: 10%;
+    display: inline-block;
+    margin: 1%;
+    border: 2px solid #0F0;
+    &:hover {
+      border: 2px solid #F00;
+    }
+  }
+}
