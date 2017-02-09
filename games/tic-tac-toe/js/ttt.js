@@ -1,32 +1,40 @@
 'use strict'
 
-const createBoard = (cells) => {
-  for (let i = 0; i < 3; i++) {
-    for (let j = 0; j < 3; j++) {
-      let cell = $('<div class="cell" id="' + j + i + '"></div>')
-      //$(cell).text(String(j) + String(i))
-      cells[i][j] = String(j) + String(i)
-      $('#ttt').append(cell)
-    }
-  }
-  return cells
-}
-
-const aiTakeTurn = (color, cells) => {
+const aiTakeTurn = (aiSign, cells) => {
   let x = Math.floor((Math.random() * 3))
   let y = Math.floor((Math.random() * 3))
   let pos = String(x) + String(y)
-  $('#' + pos).css('background-color', color)
+  $('#' + pos).text(aiSign)
+	$('#' + pos).css('color', '#DDD')
+}
+
+const preGame = () => {
+    $('#ttt').hide()
+    $('#overlay').show()
+}
+
+const startGame = () => {
+  $('#ttt').show()
+  $('#overlay').hide()
 }
 
 $(document).ready(() => {
   const cells = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
-  const player1Color = '#00F'
-  const player2Color = '#F00'
-  createBoard(cells)
+  let playerSign = 'X'
+  let aiSign = 'O'
+  preGame()
+
+	$('#overlay h3').click((event) => {
+		playerSign = $(event.target).text()
+		aiSign = playerSign === 'X' ? 'O' : 'X'
+		startGame()
+  })
+
   $('.cell').click((event) => {
     const id = event.target.id
-    $('#' + id).css('background-color', player1Color)
-    aiTakeTurn(player2Color, cells)
+    $('#' + id).text(playerSign)
+		$('#' + id).css('color', '#DDD')
+    aiTakeTurn(aiSign, cells)
+		//checkWinLoss(cells)
   })
 })

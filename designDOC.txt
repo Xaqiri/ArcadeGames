@@ -6,5 +6,10 @@ Included Games:
     Flappy Bird 
     Frogger 
     Breakout 
+    Asteroids 
     Tetris 
     Pacman 
+    Snake 
+    Blackjack 
+    Solitaire 
+    

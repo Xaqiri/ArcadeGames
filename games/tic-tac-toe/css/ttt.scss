@@ -32,10 +32,12 @@ html, body {
 
 #ttt {
   //background-color: $lgt-bg-color;
-  //color: $drk-fg-color;
-  text-align: center;
+  color: $drk-fg-color;
   margin: 10%;
   .cell {
+    cursor: pointer;
+    text-align: center;
+    vertical-align: center;
     width: 25%;
     height: 10%;
     display: inline-block;
@@ -43,6 +45,18 @@ html, body {
     border: 2px solid #0F0;
     &:hover {
       border: 2px solid #F00;
+    }
+  }
+}
+
+#overlay {
+  h3 {
+    display: inline;
+    cursor: pointer;
+    border: 2px solid $bg-color;
+    padding: 1%;
+    &:hover {
+      border: 2px solid $fg-color;
     }
   }
 }

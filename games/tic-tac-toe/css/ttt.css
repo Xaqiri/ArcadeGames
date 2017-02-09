@@ -21,9 +21,12 @@ html, body {
       padding-left: 1em; }
 
 #ttt {
-  text-align: center;
+  color: #111111;
   margin: 10%; }
   #ttt .cell {
+    cursor: pointer;
+    text-align: center;
+    vertical-align: center;
     width: 25%;
     height: 10%;
     display: inline-block;
@@ -31,5 +34,13 @@ html, body {
     border: 2px solid #0F0; }
     #ttt .cell:hover {
       border: 2px solid #F00; }
+
+#overlay h3 {
+  display: inline;
+  cursor: pointer;
+  border: 2px solid #004;
+  padding: 1%; }
+  #overlay h3:hover {
+    border: 2px solid #DDD; }
 
 /*# sourceMappingURL=ttt.css.map */
