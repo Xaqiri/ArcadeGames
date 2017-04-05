@@ -1,5 +1,5 @@
 To be a web app made using Electron and Phaser, containing implementations 
-of a handful of arcade games. 
+of a handful of simple games. 
 
 Included Games: 
   Pong 
@@ -14,3 +14,5 @@ Included Games:
   Snake 
   Blackjack 
   Solitaire 
+  Minesweeper 
+  
